@@ -4,33 +4,20 @@
 
 This assignment explores two fundamental linear data structures:
 
-- Stack (LIFO)
-- Queue (FIFO)
+- Stack (LIFO): Using last-in, first-out
+- Queue (FIFO): Using first-in, first-out
 
-## Learning Objectives
+## Implementation
+I implemented the Stack using a Python list. The push() method 
+added values to the top of the stack, pop() removed the most 
+recently added value, and peek() returned the top value without removing it.
+I implemented the Queue using collections.deque. The enqueue() method added
+values to the back of the queue, dequeue() removed values from the front, and 
+front() returned the first value without removing it.
 
-- Implement stack operations
-- Implement queue operations
-- Understand LIFO and FIFO behavior
-- Create edge cases
-
-## Requirements
-
-Complete all TODO sections:
-
-1. Implement stack operations.
-2. Implement queue operations.
-3. Demonstrate LIFO behavior.
-4. Demonstrate FIFO behavior.
-5. Create and test edge cases.
-6. Create a real-world scenario.
-
-## Discussion Board Reflection
-
-After completing the programming assignment, add this reflection to your initial discussion post in LEO.
-
-Your reflection should be approximately 150–200 words and address the following questions:
-
-1. What concepts or skills did you learn while completing this assignment?
-2. What challenges did you encounter, and how did you overcome them?
-3. Explain the differences between stacks and queues as this relates to real-world applications.
+## Testing and Edge Cases
+I tested both structures with four values to demonstrate LIFO and FIFO behavior. 
+I also tested pop() and peek() on an empty stack and dequeue() and front() on an 
+empty queue. These methods returned None instead of causing an error. I created 
+single-item stack and queue tests and verified that each structure became empty 
+after its only item was removed.
