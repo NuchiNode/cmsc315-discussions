@@ -56,15 +56,6 @@ This also demonstrates why performance matters. Accessing a list by index is fas
 beginning or middle can require other items to shift. A linear search may also need to scan the entire list before 
 finding a value.
 
-
-## Requirements
-
-1. Test insertion at the beginning, middle, and end.
-2. Test deletion at the beginning, middle, and end.
-3. Search for existing and missing values.
-4. Demonstrate edge cases.
-5. Create a real-world scenario.
-
 ## Discussion Board Reflection
 
 This assignment helped me understand what happens when using Python list operations instead of only using built-in 

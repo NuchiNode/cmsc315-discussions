@@ -127,6 +127,7 @@ def main():
     # ===============================
     # TODO REAL-WORLD SCENARIO
     # ===============================
+
     print("\n=== REAL-WORLD SCENARIO: STIG REMEDIATION LIST ===")
 
     # Open STIG findings waiting to be fixed.
