@@ -14,6 +14,10 @@ key concepts in your own words using comments and output.
 
 class Node:
     def __init__(self, value):
+        # TODO (Student):
+        # Store the node's value and initialize references
+        # to the left and right child nodes.
+
         # Each node stores a value and references to its left and right children.
         self.value = value
         self.left = None
@@ -22,11 +26,26 @@ class Node:
 
 class BST:
     def __init__(self):
+        # TODO (Student):
+        # Initialize an empty Binary Search Tree.
+
+        # An empty BST does not have a root node,
+        # so the root starts as None.
+
         # An empty BST does not have a root node, so the root starts as None.
         self.root = None
 
     def insert(self, value):
-        """Insert a value into the BST."""
+        """
+        TODO (Student):
+        Insert a value into the BST.
+
+        Requirements:
+        - Use the recursive helper method.
+        - Add comments explaining why insertion depends on
+          whether a value is smaller or larger than the
+          current node.
+        """
 
         # Smaller values are assigned to the left side of the node.
         # Larger values are assigned to the right side of the node.
@@ -34,6 +53,17 @@ class BST:
         self.root = self._insert_recursive(self.root, value)
 
     def _insert_recursive(self, node, value):
+        """
+     TODO (Student):
+     Implement recursive BST insertion.
+
+     Requirements:
+     - Create a new node when a position is found.
+     - Insert smaller values into the left subtree.
+     - Insert larger values into the right subtree.
+     - Return the updated node reference.
+     """
+
         """Recursive helper method for inserting a value."""
 
         # If there is no node here, this is where
@@ -53,7 +83,16 @@ class BST:
         return node
 
     def search(self, value):
-        """Search for a value in the BST."""
+        """
+       TODO (Student):
+       Search for a value in the BST.
+
+       Requirements:
+       - Return True if found.
+       - Return False if not found.
+       - Add comments explaining why BST search is often
+         more efficient than linear search.
+       """
 
         # A BST can search faster than a linear structure
         # because each comparison tells whether to go left
@@ -62,6 +101,11 @@ class BST:
 
 
     def _search_recursive(self, node, value):
+        """
+        TODO (Student):
+        Implement recursive BST search.
+        """
+
         """Recursive helper method for BST searching."""
 
         # Reaching None means the value was not found.
@@ -80,6 +124,12 @@ class BST:
         return self._search_recursive(node.right, value)
 
     def inorder(self):
+        """
+        TODO (Student):
+        Return a list containing the values from an
+        in-order traversal.
+        """
+
         """Return the BST values using in-order traversal."""
 
         # Create an empty list that will hold the values
@@ -93,6 +143,18 @@ class BST:
         return values
 
     def _inorder_recursive(self, node, values):
+        """
+       TODO (Student):
+       Implement in-order traversal.
+
+       Requirements:
+       - Visit the left subtree.
+       - Visit the current node.
+       - Visit the right subtree.
+       - Add comments explaining why this traversal
+         produces sorted output in a BST.
+       """
+
         """Recursive helper method for in-order traversal."""
 
         if node is not None:
