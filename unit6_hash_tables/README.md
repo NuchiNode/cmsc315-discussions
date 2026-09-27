@@ -30,3 +30,16 @@ Your reflection should be approximately 150–200 words and address the followin
 1. What concepts or skills did you learn while completing this assignment?
 2. What challenges did you encounter, and how did you overcome them?
 3. Explain how hash tables behave, what collisions are, and how hash tables can improve efficiency.
+
+While completing this assignment, I used server IDs as the keys and operating systems as the values because this is 
+similar to how I might keep track of systems in an IT environment. I practiced adding entries to the dictionary, looking
+up values using their key, updating existing values, and deleting entries.
+
+One challenge was understanding how the key locates a value in the dictionary. Testing the program with a small set of 
+server IDs helped me see how each key is linked to a specific value. I also learned that trying to access a key that 
+does not exist causes a KeyError. To handle this, I used get() and pop() with default values, which return a message 
+instead of an error.
+
+A dictionary is a hash table because Python hashes each key to determine where its key-value pair is stored. A collision
+happens when two different keys map to the same location. Python handles these collisions internally by finding another 
+open spot. Hash tables improve efficiency because searching, inserting, updating, and deleting are O(1) on average.
